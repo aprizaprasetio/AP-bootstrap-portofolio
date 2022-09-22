@@ -1,0 +1,110 @@
+#animate {
+    position: absolute;
+}
+
+.img-normal {
+    height: 400px;
+}
+
+.img-favorites {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-profile {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-stay {
+    position: absolute;
+    translate: 300px;
+}
+
+.font-serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-handy {
+    font-family: 'Segoe Script', cursive;
+}
+
+.when-using-icon a {
+    text-align: left;
+    text-indent: 10px;
+}
+
+.when-using-icon i {
+    padding-right: 6px;
+}
+
+.for-icon {
+    padding-right: 6px;
+}
+
+.spinning {
+    animation: rotating 6.66s linear infinite;
+}
+
+.blowing {
+    animation: blowing 3.33s linear infinite;
+}
+
+.bg-vector-community {
+    background-image: url('../img/employee-pana.svg');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center 400px;
+    height: 150%;
+}
+
+.carousel-sized .carousel-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.full-carousel {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotating {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes blowing {
+
+    from,
+    to {
+        transform: translate(0);
+
+    }
+
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+
+    33.33% {
+        transform: translate(-2.1rem, -2ex);
+    }
+
+    50% {
+        transform: translate(0);
+    }
+
+    77.77% {
+        transform: translate(2.1rem, 2ex);
+    }
+}
