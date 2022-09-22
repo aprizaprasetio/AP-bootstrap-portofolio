@@ -108,3 +108,44 @@
         transform: translate(2.1rem, 2ex);
     }
 }
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-mobile img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .banner-front {
+        width: 90%;
+    }
+
+    .navbar ul {
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-banner {
+        display: none;
+    }
+
+    .carousel-mobile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-banner {
+        display: none;
+    }
+
+}
