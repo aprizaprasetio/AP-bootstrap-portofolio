@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/my-script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top shadow">
             <div class="container">
-                <a class="navbar-brand" href="">Apriza Prasetio</a>
+                <a class="navbar-brand" href="/">Apriza Prasetio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger-list"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="ms-auto collapse navbar-collapse" id="hamburger-list">
-                    <ul class="navbar-nav container-fluid">
+                    <ul class="navbar-nav container text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#sosial-media">Sosial Media</a>
                         </li>
@@ -36,13 +37,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#portofolio">Portofolio</a>
                         </li>
+                        <li class="nav-item ms-auto">
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="modal"
+                                data-bs-target="#formKontak">Kontak</button>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="profile container pt-5">
+        <div class="profile pt-5 mx-auto">
             <img class="img-normal banner-front" src="assets/img/Task-bro.svg" alt="">
-            <article class="d-flex flex-column-reverse">
+            <article class="d-flex flex-column-reverse mx-3">
                 <h1 class="text-primary display-1 fw-bold">Apriza Prasetio</h1>
                 <p class="display-5 fw-semibold">Perkenalkan, Seorang Programmer Amatir</p>
             </article>
@@ -50,7 +55,7 @@
     </header>
     <main class="d-flex flex-column mt-5 bg-info bg-opacity-25">
         <div class="container-fluid py-5 bg-social" id="sosial-media">
-            <article class="profile gap-5">
+            <article class="profile gap-5 text-center">
                 <header class="d-flex align-items-center gap-4">
                     <h2 class="bg-primary px-4 py-2 text-light rounded-2"><i
                             class="fa-solid fa-heart for-icon"></i>Sosial Media
@@ -112,29 +117,30 @@
             <header>
                 <h2 class="text-center text-light display-5 text-uppercase font-serif">Ketertarikan</h2>
             </header>
-            <div class="container bg-light rounded-5 p-5 row gap-3 justify-content-center text-center font-handy">
-                <article class="card col-md-3">
+            <div
+                class="container p-5 bg-light rounded-5 row row-cols-lg-4 row-cols-md-3 row-cols-1 gap-3 justify-content-center text-center font-handy">
+                <article class="card col">
                     <img class="card-img-top img-favorites"
                         src="assets/img/favorites/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="">
                     <div class="card-body">
                         <h3 class="card-text fw-light">Ngoding</h3>
                     </div>
                 </article>
-                <article class="card col-md-3">
+                <article class="card col">
                     <img class="card-img-top img-favorites"
                         src="assets/img/favorites/paul-hanaoka-LcAZcVWsCIo-unsplash.jpg" alt="">
                     <div class="card-body">
                         <h3 class="card-text fw-light">Turu</h3>
                     </div>
                 </article>
-                <article class="card col-md-3">
+                <article class="card col">
                     <img class="card-img-top img-favorites"
                         src="assets/img/favorites/robert-bahn-8w0SjxoBj5k-unsplash.jpg" alt="">
                     <div class="card-body">
                         <h3 class="card-text fw-light">Suka Kucing</h3>
                     </div>
                 </article>
-                <article class="card col-md-3">
+                <article class="card col">
                     <img class="card-img-top img-favorites"
                         src="assets/img/favorites/souvik-banerjee-8dOk8JVESxY-unsplash.jpg" alt="">
                     <div class=" card-body">
@@ -148,7 +154,7 @@
                 <h2 class="display-2 fw-light"><i class="fa-brands fa-react spinning"></i>Portofolio</h2>
             </header>
             <div id="portos" class="carousel slide carousel-mobile" data-bs-ride="false" data-bs-touch="true">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators btn">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -212,6 +218,41 @@
                 </article>
             </div>
         </div>
+        <aside>
+            <button class="btn btn-primary border-light fs-5 scroll-top collapse" type="button"><i
+                    class="fa-solid fa-arrow-up"></i></button>
+            <div class="modal fade" id="formKontak" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hubungi Saya</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <section class="mb-2">
+                                    <label class="form-label">Nama</label>
+                                    <input class="form-control" type="text" name="" id="">
+                                </section>
+                                <section class="mb-2">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" type="text" name="" id="">
+                                </section>
+                                <section class="mb-2">
+                                    <label class="form-label">Pesan</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </section>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="button" class="btn btn-primary">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </main>
     <footer class="bg-dark bg-opacity-75 p-3 text-light profile justify-content-evenly text-center shadow">
         <div>

@@ -120,6 +120,20 @@
     object-fit: cover;
 }
 
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    animation: boing 1s infinite;
+    transition: .66s;
+}
+
+@keyframes boing {
+    50% {
+        translate: 0 -16px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .profile {
         flex-direction: column;
@@ -129,12 +143,12 @@
         width: 90%;
     }
 
-    .navbar ul {
+    footer ul {
         flex-direction: column !important;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .contact-banner {
         display: none;
     }
