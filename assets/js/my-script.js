@@ -14,6 +14,7 @@ const collapseScrollBtn = () => {
 }
 const sendToSheets = Event => {
     Event.preventDefault()
+    const myContainer = new FormData(myForm)
     fetch('https://script.google.com/macros/s/AKfycby4stEtjf-BNNJXr0lPJvX5wiTc-_D44xSEOfuzzrpVG3Vf-Y8_tIaNXi6amehUjesNZA/exec', {
         method: 'POST',
         body: myContainer,
