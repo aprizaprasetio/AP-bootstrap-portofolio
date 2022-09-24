@@ -125,7 +125,6 @@
     right: 30px;
     bottom: 60px;
     animation: boing 1s infinite;
-    transition: .66s;
 }
 
 @keyframes boing {
